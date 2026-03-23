@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dangnhap</title>
+    <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+     <button id="backhome"> Trang Chủ </button>
+    <div> </div>
+  
+    <div class="container">
+<h1 id="wellcomeText">Thông Tin</h1> 
+<div class="button" id="authButtons">
+<button id="btnLogin">Đăng nhập</button>
+  <button id="btnRegister"> Đăng Kí</button>
+</div>  
+ 
+   <button id="logoutBtn" style="display: none;">Đăng Xuất</button>
+
+    </div>
+    <!-- form đăng nhập -->
+ <div class="form" id="loginForm">
+    <h2>đăng nhập</h2>
+    <input type="text" id="loginUser" placeholder="Tên Đăng Nhập">
+    <input type="password" id="loginPass" placeholder="Mật Khẩu">
+<br>
+    <button id="loginSubmit"> đăng nhập</button>
+    <p>Bạn chưa có tài khoản</p>
+    <span onclick="showRegister()">đăng ký</span>
+ </div>
+
+ <!-- form đăng kí -->
+  <div class="form" id="registerForm">
+<h2>đăng kí</h2>
+<input type="text" id="registerUser" placeholder="Tên Đăng Nhập">
+<input  type="password" id="registerPass" placeholder="Mật Khẩu">
+<br>
+<button onclick="register()">Đăng Ký</button>
+<p>Đã có tài khoản 
+    <span onclick="showLogin()">Đăng Nhập</span>
+</p>
+  </div>
+<script>
+    function dangNhapThanhCong() {
+        document.getElementById("dangxuat").style.display = "inline-block";
+    }
+</script>
+<!-- FOOTER -->
+<div id="footer-container"></div>
+
+    <script>
+        fetch("footer.html")
+        .then(dulieu =>dulieu.text())
+        .then(thongtin => { document.getElementById("footer-container").innerHTML=thongtin })
+    </script>
+ <script src="./js/login.js"></script>
+</body>
+</html>

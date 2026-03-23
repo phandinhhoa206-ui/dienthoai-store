@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Chi tiết sản phẩm</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button onclick="back()">⬅ Trang chủ</button>
+<button onclick="cart()">🛒 Giỏ hàng</button>
+
+<h1 id="ten"></h1>
+<p id="gia"></p>
+
+<div id="gallery" class="gallery"></div>
+
+<p id="moTa"></p>
+
+<hr>
+
+<label>Số lượng:</label>
+<input type="number" id="soLuong" value="0" min="0">
+
+<p id="tien">Thành tiền: 0₫</p>
+
+<button onclick="them()">➕ Thêm vào giỏ</button>
+
+<!-- FOOTER -->
+<div id="footer-container"></div>
+
+    <script>
+        fetch("footer.html")
+        .then(dulieu =>dulieu.text())
+        .then(thongtin => { document.getElementById("footer-container").innerHTML=thongtin })
+    </script>
+
+<script src="./js/data.js"></script>
+<script src="./js/cart.js"></script>
+<script src="./js/detail.js"></script>
+</body>
+</html>

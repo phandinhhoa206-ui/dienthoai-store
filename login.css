@@ -1,0 +1,53 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+   background: rgb(222, 247, 249);
+}
+ 
+.container{
+    width: 350px;
+    margin: 100px auto;
+    background: rgb(185, 242, 250);
+    padding: 25px;
+    text-align: center;
+    border-radius: 8px;
+}
+button{
+    background: rgb(85, 166, 180);
+    padding: 8px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border: 2px solid rgb(58, 109, 143);   /*viền cho nút button*/
+}
+button:hover {
+    background: rgb(102, 237, 237);
+}
+.form{
+    display: none;
+    margin-top: 20px;
+    background-color: rgba(74, 137, 161, 0.948);
+}
+input{
+    width:90%;
+    padding: 8px;
+    margin: 8px 0;
+}
+span{
+    color: rgba(255, 0, 0, 0.493);
+    cursor: pointer;
+}
+#loginForm{
+    background-color: rgb(176, 247, 253);
+    width: 2000px;
+    margin: 20px auto;
+    text-align: center;
+}
+#registerForm{
+      background-color: rgb(176, 243, 253);
+    width: 2000px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#logoutbtn{
+    display: none;
+}

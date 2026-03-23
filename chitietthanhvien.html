@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Trang Chi Tiet</title>
+    <link rel="stylesheet" href="./thanhvien.css">
+</head>
+<body>
+    <p style="color: rgb(15, 65, 65); font-family: 'Times New Roman', Times, serif ;font-size: xx-large;"  > Thành Viên </p>
+    <div id="noidung"> </div>
+
+
+    <button id="backhome"> Trang Chủ </button>
+    <div> </div>
+
+    <script src="./js/chitietthanhvien.js"></script>
+
+   <!-- FOOTER -->
+<div id="footer-container"></div>
+
+    <script>
+        fetch("footer.html")
+        .then(dulieu =>dulieu.text())
+        .then(thongtin => { document.getElementById("footer-container").innerHTML=thongtin })
+    </script>
+
+ 
+
+</body>
+</html>

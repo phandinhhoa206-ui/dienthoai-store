@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="sticky">
+    <div class="logo"><i>DIENTHOAIDIDONG</i></div>
+    <input type="text" placeholder="Bạn tìm gì..." id="search">
+    <a href="./login.html"> <button id="dkinguoidung"> <img src="./images/giaodiennguoidung.png" width="40px" height="40px"> </button> </a>
+   
+</header>
+
+<!-- thanh menu -->
+<nav>
+    <a href="#">Điện thoại</a>
+    <a href="#">Laptop</a>
+    <a href="#">Tablet</a>
+    <a href="#">Phụ kiện</a>
+    <a href="#">Máy cũ</a>
+    <a href="#">Sim,Thẻ cào</a>
+</nav>
+
+<!-- BANNER -->
+<div class="banner">
+    <h1> NGÀY HỘI SIÊU SALE🔥</h1>
+</div>
+      <h1> Cửa hàng Điện Thoại</h1>
+  <button onclick="xemGio()">🛒 Xem giỏ hàng</button>
+
+<!--sản phẩn -->
+<main>
+
+
+<div class="banner1">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/lTrdB7m7QZs?si=MemDvectXWDDPGXm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/-etoRi1t2co?si=XYzmZiqnxnq7bZLZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/vyvzOTIN2cM?si=UJXcyWmmf9mqgp5A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<h2>Danh sách sản phẩm</h2>
+<div class="phone-container" id="cacloaidienthoai"></div>
+
+<h2>Thành Viên</h2>
+<div class="card-container" id="card-container"></div>
+
+
+
+<!-- FOOTER -->
+<div id="footer-container"></div>
+
+    <script>
+        fetch("footer.html")
+        .then(dulieu =>dulieu.text())
+        .then(thongtin => { document.getElementById("footer-container").innerHTML=thongtin })
+    </script>
+
+<script src="./js/data.js"></script>
+<script src="./js/cart.js"></script>
+<script src="./js/render.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/thanhvien.js"></script>
+</body>
+</html>
