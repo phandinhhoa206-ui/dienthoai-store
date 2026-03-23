@@ -20,6 +20,9 @@ MSSV      : 24T01011.
    <img width="1892" height="837" alt="image" src="https://github.com/user-attachments/assets/6a0e9ffd-96b0-4714-9854-133217e9d208" />
 -Đây là bên trong giỏ hàng khi ta thêm sản phẩm ,nếu muốn xóa từng sp thì có nút xóa ở cuối dòng . nếu muốn xóa hết thì có nút button xóa tất cả ở phía dưới
 .có nút thanh toán và và trở về trang chủ để chúng ta có thể muốn mua thêm sản phẩm nữa.
+
+
+link trường: https://www.facebook.com/bdi.edu.vn
    
 
 
